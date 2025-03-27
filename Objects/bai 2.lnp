@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+".\objects\gpio.o"
+".\objects\rfid.o"
+".\objects\spi.o"
+".\objects\sys.o"
+".\objects\tim.o"
+".\objects\uart.o"
+".\objects\main.o"
+".\objects\misc.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_i2c.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_tim.o"
+".\objects\stm32f10x_usart.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\system_stm32f10x.o"
+".\objects\stm32f10x_spi.o"
+--strict --scatter ".\Objects\bai 2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\bai 2.map" -o ".\Objects\bai 2.3"
